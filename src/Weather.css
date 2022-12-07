@@ -1,9 +1,16 @@
 .Weather {
-  border: 2px solid salmon;
+  border: 4px solid palevioletred;
   border-radius: 10px;
   padding: 1.5em;
   margin: 0 auto;
   max-width: 700px;
+  background-color: aliceblue;
+}
+
+.Weather ul {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  font-size: 1.2em;
 }
 
 .Weather form {
@@ -11,5 +18,25 @@
 }
 
 .Weather h1 {
-  padding-bottom: 0.5em;
+  padding: 0.2em 0.3em;
+}
+
+.Weather .temperature {
+  font-size: 2.5em;
+  padding-left: 1em;
+  margin: 0.2em;
+}
+
+.Weather .unit {
+  margin-left: 0.2em;
+  font-size: 1.5em;
+}
+
+.Weather img {
+  margin-left: 1em;
+}
+
+.Weather .btn {
+  background-color: palevioletred;
+  border: 1px solid rgb(60, 21, 59);
 }
