@@ -10,7 +10,7 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       temperature: response.data.temperature.current,
-      date: new Date(response.data.time),
+      date: new Date(response.data.time * 1000),
       wind: response.data.wind.speed,
       condition: response.data.condition.description,
       feels: response.data.temperature.feels_like,
