@@ -23,7 +23,7 @@
 
 .Weather .temperature {
   font-size: 2.5em;
-  padding-left: 1em;
+  padding-left: 0;
   margin: 0.2em;
 }
 

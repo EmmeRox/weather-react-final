@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import Conversion from "./Conversion";
 
 export default function WeatherInfo(props) {
   console.log(props.data.city);
@@ -14,11 +15,14 @@ export default function WeatherInfo(props) {
       </ul>
       <div className="row">
         <div className="col-6">
-          <img src={props.data.icon} alt={props.data.condition} />
-          <span className="temperature">
-            {Math.round(props.data.temperature)}
-          </span>
-          <span className="unit">°C</span>
+          <div className="row">
+            <div className="col-6">
+              <img src={props.data.icon} alt={props.data.condition} />
+            </div>
+            <div className="col-6">
+              <Conversion celsius={props.data.temperature} />
+            </div>
+          </div>
         </div>
         <div className="col-6">
           <ul>
