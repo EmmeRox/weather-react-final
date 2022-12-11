@@ -1,0 +1,12 @@
+.WeatherInfo .temperature {
+  display: inline-block;
+}
+
+.WeatherInfo .temperature {
+  padding: 0;
+}
+
+.WeatherIcon canvas {
+  display: inline;
+  max-width: 100px;
+}

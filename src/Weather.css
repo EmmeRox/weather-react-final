@@ -32,8 +32,9 @@
   font-size: 1.5em;
 }
 
-.Weather img {
+.Weather canvas {
   margin-left: 1em;
+  display: inline;
 }
 
 .Weather .btn {
