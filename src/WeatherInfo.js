@@ -3,7 +3,6 @@ import FormattedDate from "./FormattedDate";
 import Conversion from "./Conversion";
 
 export default function WeatherInfo(props) {
-  console.log(props.data.city);
   return (
     <div className="WeatherInfo">
       <h1>{props.data.city}</h1>
