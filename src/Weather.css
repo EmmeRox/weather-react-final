@@ -17,6 +17,10 @@
   padding-bottom: 1em;
 }
 
+.Weather .search-btn {
+  min-width: 70px;
+}
+
 .Weather h1 {
   padding: 0.2em 0.3em;
 }
@@ -40,4 +44,8 @@
 .Weather .btn {
   background-color: palevioletred;
   border: 1px solid rgb(60, 21, 59);
+}
+
+.WeatherInfo .main-temp {
+  padding-top: 1em;
 }
