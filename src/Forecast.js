@@ -11,7 +11,7 @@ export default function Forecast(props) {
     setLoaded(true);
   }
 
-  console.log(forecast[0]);
+  console.log(forecast[0].condition);
 
   if (loaded) {
     return (
@@ -19,7 +19,10 @@ export default function Forecast(props) {
         <div className="row">
           <div className="col">
             <div className="Forecast-day">Thu</div>
-            <img src={forecast[0].condition.icon} alt={forecast[0].condition} />
+            <img
+              src={forecast[0].condition.icon_url}
+              alt={forecast[0].condition.description}
+            />
             <div className="Forecast-temp">
               <span className="Forecast-max">20°</span>
               <span className="Forecast-min">10°</span>
