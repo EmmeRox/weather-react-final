@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ForecastDay from "./ForecastDay";
 import "./Forecast.css";
 import axios from "axios";
 
@@ -11,22 +12,13 @@ export default function Forecast(props) {
     setLoaded(true);
   }
 
-  console.log(forecast[0].condition);
-
   if (loaded) {
+    console.log(forecast);
     return (
       <div className="Forecast">
         <div className="row">
           <div className="col">
-            <div className="Forecast-day">Thu</div>
-            <img
-              src={forecast[0].condition.icon_url}
-              alt={forecast[0].condition.description}
-            />
-            <div className="Forecast-temp">
-              <span className="Forecast-max">20°</span>
-              <span className="Forecast-min">10°</span>
-            </div>
+            <ForecastDay data={forecast[0]} />
           </div>
         </div>
       </div>
