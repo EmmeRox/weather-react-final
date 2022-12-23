@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import Conversion from "./Conversion";
+import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
   return (
@@ -13,7 +14,7 @@ export default function WeatherInfo(props) {
         <li className="text-capitalize">{props.data.condition}</li>
       </ul>
       <div className="row">
-        <div className="col-6">
+        <div className="col-7">
           <div className="row">
             <div className="col-md-6 d-none d-md-block">
               <img src={props.data.icon} alt={props.data.condition} />
@@ -23,7 +24,7 @@ export default function WeatherInfo(props) {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-5">
           <ul>
             <li>Feels like: {Math.round(props.data.feels)}°C</li>
             <li>Humidity: {props.data.humidity}%</li>
